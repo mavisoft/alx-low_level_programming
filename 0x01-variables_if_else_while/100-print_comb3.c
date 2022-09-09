@@ -1,27 +1,33 @@
 #include <stdio.h>
 /**
- * main - program compilation begins from main
- * Description: Program to print all possible combinations of numbers
- with no two digits
- * author: mavis
- * Return: 0 means success
+ * main - Entry point
+ *
+ * Return: Always 0 (Success/correct)
  */
+
 int main(void)
 {
-        int a, b;
+	int i;
+	int j;
 
-        for (a = 48; a <=57; a++)
-        {
-                for (b = 49; b <= 57; b++)
-                {
-                        if ( a != b && b > a)
-                        {
-                                putchar(a);
-                                putchar(b);
-                                putchar(',');
-                        }
-                }
-        }
-        putchar('\n');
-        return (0);
+	for (i = 48; i < 58; i++)
+	{
+		for (j = 48; j < 58; j++)
+		{
+			if (i != j && i < j)
+			{
+				putchar(i);
+				putchar(j);
+				if (j == 57 && i == 56)
+				{
+					break
+						;
+				}
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+	return (0);
 }
