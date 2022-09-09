@@ -9,7 +9,7 @@ int main(void)
 {
 	int mav;
 
-	for (mav = 0; mav < 10; mav++)
+	for (mav = 48; mav < 58; mav++)
 		putchar(mav);
 	putchar('\n');
 	return (0);
