@@ -1,18 +1,14 @@
 #include "main.h"
-
 /**
- * main - Entry point
- * description - a function that prints the alphabet, in lowercase, followed by a new line
- * Return: Always 0 (Success/correct)
+ * print_alphabet - Prints alphabets 'a - z'
  */
-int main(void)
+void print_alphabet(void)
 {
-	char mavis;
+	char i;
 
-	for (mavis = 'a'; mavis <= 'z'; mavis++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		_putchar(mavis);
+		_putchar(i);
 	}
 	_putchar('\n');
-	return (0);
 }
