@@ -1,16 +1,16 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 
 /**
- *a function that multiplies two integers
- * Return - x
+ * mul - function that multiplies two integers
+ * @a: First integer
+ * @b: Second integer
+ * Return: mul.
  */
-
 int mul(int a, int b)
 {
+	int x;
+
 	x = a * b;
-
-	printf("Answer is equals %if" a, b, x);
-
-	return(x);
+	return (x);
 }
