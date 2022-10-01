@@ -2,16 +2,22 @@
 #include <stdlib.h>
 
 /**
- * main - Prints the number of arguments passed to it.
- * @argc: The number of arguments supplied to the program.
- * @argv: An array of pointers to the arguments.
+ * main - print number of arguments passed to main
+ * @argc: number of actual parameter passed to main
+ * @argv: pointer to the first element passed to main
  *
- * Return always 0
+ * Return: success
  */
 
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	printf("= %d", argc - 1);
+	int count = 0;
 
-	return 0;
+	while (argc-- > 1)
+		count++;
+
+	(void)(*argv);
+
+	printf("%d\n", count);
+	exit(EXIT_SUCCESS);
 }
