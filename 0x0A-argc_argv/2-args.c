@@ -6,7 +6,7 @@
  * @argc: number of actual parameter passed to main
  * @argv: pointer to the first element passed to main
  *
- * Return: Always 0
+ * Return: success
  */
 
 int main(int argc, char *argv[])
@@ -18,5 +18,5 @@ int main(int argc, char *argv[])
 		printf("%s\n", argv[count]);
 		count++;
 	}
-	return 0:
+	exit(EXIT_SUCCESS):
 }
